@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Website</title>
+    <script src="assets/js/feshion_script.js" defer></script>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimco</title>
+    <link rel="stylesheet" href="assets/css/feshion_style.css">
+    <script src="assets/js/feshion_script.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>
+            <a href="#"><img src="assets/images/mimco-logo.png" alt="logo" height="50px"></a>
+        </h1>
+        <div class="navbar-items">
+            <a href="index.html">HOME</a>
+            <a href="#">NEW</a>
+            <a href="#">FASHION</a>
+            <a href="#">SHOP</a>
+            <a href="about.html">ABOUT US</a>
+        </div>
+        <button onclick="toggleMenu()" class="menu">
+            ☰
+        </button>
+    </nav>
+    <div class="side-navbar">
+        <button onclick="toggleMenu()" class="close-btn">&times;</button>
+        <nav class="side-navbar-items">
+            <a href="index.html">HOME</a>
+            <a href="#">NEW</a>
+            <a href="#">FASHION</a>
+            <a href="#">SHOP</a>
+            <a href="about.html">ABOUT US</a>
+        </nav>
+    </div>
+    <div class="story">
+      <P>
+        <H1>DEVELOPIND A WEB PAGE FOR MIMCO</H1>
+        Developing a web page for Mimco, a renowned fashion brand, was an inspiring journey that challenged and refined my skills as a developer. From UI/UX design to front-end optimization, every aspect of the project required a balance of aesthetics and functionality. The process involved understanding the brand’s visual identity, ensuring consistency across the platform, and implementing interactive elements that enhance user engagement. As the developer behind this project, I, Sudharsan, took a user-centric approach to create a seamless and visually appealing experience while maintaining technical efficiency.
+      </P>
+      <P>
+        <h1>USER-CENTRIC DESIGN APPROACH</h1>
+        One of the key focuses was creating a seamless and visually appealing user experience. Implementing responsive layouts, intuitive navigation, and engaging visual elements ensured that the website aligned with Mimco’s brand identity while enhancing usability. By conducting usability tests and gathering feedback, I was able to fine-tune the interface to provide a smooth and enjoyable browsing experience for customers.
+      </P>
+      <p>
+        <h1>OPTIMIZING PERFORMANCE & ACCESSINILITY</h1>
+        Beyond design, optimizing the website for speed, mobile responsiveness, and accessibility was crucial. Using best coding practices, optimizing images, and implementing efficient CSS and JavaScript allowed for a fast-loading and inclusive digital experience. I also ensured that the website adhered to WCAG accessibility standards, making it more user-friendly for people with disabilities, further broadening its reach.
+      </p>
+    </div>
+   
+</body>
+
+<footer>
+  <div class="footer-contacts">
+      <div class="footer-logo">
+          <img src="assets/images/mimco-logo.png" alt="">
+      </div>
+      <div class="services-footer">
+          <div class="services-footer-items">
+              <img src="assets/images/globe-logo.jpg" width="50px" alt="">
+              <h1>Global wide service</h1>
+          </div>
+          <div class="services-footer-items">
+              <img src="assets/images/crown-logo.jpg" width="50px" alt="">
+              <h1>Wear & feel luxurious</h1>
+          </div>
+          <div class="services-footer-items">
+              <img src="assets/images/star-logo.jpg" width="50px" alt="">
+              <h1>Premium products</h1>
+          </div>
+      </div>
+      <div class="contacts-icons">
+          <a href=""><img src="assets/images/linkin-logo.jpg" width="30px" alt=""></a>
+          <a href=""><img src="assets/images/ins-logo.jpg" width="30px" alt=""></a>
+          <a href=""><img src="assets/images/youtube-logo.jpg" width="30px" alt=""></a>
+      </div>
+      <div class="footer-para">
+          <p>Fashion is a powerful form of self-expression that goes beyond just clothing and accessories—it reflects
+              personality, culture, and even social movements. It is constantly evolving, influenced by designers,
+              celebrities, history, and technology. From high fashion runways to everyday streetwear, fashion allows
+              individuals to showcase their creativity and identity. In recent years, there has been a growing
+              emphasis on sustainability, with brands incorporating eco-friendly materials and ethical practices.
+              Whether bold and trendsetting or classic and timeless, fashion plays a significant role in shaping the
+              way people present themselves to the world.</p>
+      </div>
+</footer>
+   
+</html>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+.story{
+  color: rgba(255, 255, 255, 0.984);
+  font-family: 'poppins';
+  margin: 50px 50px 50px 50px;
+}
+.story h1{
+  text-align: left;
+  line-height: 80px;
+
+}
+.story p {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+body{
+  background-image: url(assets/images/R.jpeg);  
+  background-size: cover;  
+  background-position: center;  
+  background-repeat: no-repeat;  
+  width: 100%;  
+  min-height: 100vh;   
+  justify-content: center;  
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+  padding: 10px 25px;
+  box-shadow: rgba(0, 0, 0, 0.087) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 0px 0px 15px 15px;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: 200;
+
+}
+.footer-logo {
+  width: 100%;
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+  padding-top: 40px;
+
+}
+
+.footer-contacts {
+  background-color: black;
+  border-radius: 15px 15px 0px 0px;
+  box-shadow: rgba(255, 255, 255, 0.087) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.contacts-icons {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.contacts-icons a {
+  margin: 0px 30px 0px 30px;
+}
+
+.footer-para {
+  color: aliceblue;
+  text-align: center;
+  margin: 30px 0px 0px 0px;
+  padding: 0px 30px 0px 30px;
+  padding-bottom: 40px;
+}
+
+.footer-para p {
+  font-family: 'poppins';
+}
+
+.services-footer-items h1 {
+  color: white;
+  font-family: 'poppins';
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.services-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.services-footer-items {
+  text-align: center;
+}
+
+.navbar-items {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-items a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #d8d7d79e;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-family: "poppins";
+}
+
+.navbar-items a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.menu {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(247, 250, 252, 0.548);
+}
+
+.side-navbar {
+  position: fixed;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  padding-top: 50px;
+  text-align: center;
+  box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: left 0.9s ease-in-out;
+  z-index: 1000;
+  font-family: "poppins";
+  color: #787878b9;
+}
+
+.side-navbar.active {
+  left: 0;
+}
+
+.side-navbar-items a {
+  display: block;
+  font-size: 20px;
+  color: #333;
+  padding: 25px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.side-navbar-items a:hover {
+  color: black;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width:850px){
+    .navbar-items{
+      display: none;
+    }
+    .menu{
+      display: block;
+    }
+    .story h1{
+      font-size: 20px;
+      line-height: 30px;
+    }
+}
+@media screen and (max-width:650px){
+    .services-footer-items img{
+      width: 40px;
+    }
+    .services-footer-items h1{
+      font-size: 20px;
+    }
+}
+@media screen and (max-width:360px){
+    .services-footer-items img{
+      width: 30px;
+    }
+    .services-footer-items h1{
+      font-size: 10px;
+      font-weight: 500;
+    }
+    .story{
+     margin: 0px 15px 0px 15px;
+    }
+    .story h1{
+      line-height: 30px;
+      font-size:20px;
+      margin: 15px 0px 10px 0px;
+    }
+}
+
+    
+</style>
