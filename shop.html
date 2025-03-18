@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimco</title>
+   
+    <script src="assets/js/feshion_script.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>
+            <a href="#"><img src="assets/images/mimco-logo.png" alt="logo" height="50px"></a>
+        </h1>
+        <div class="navbar-items">
+            <a href="index.html">HOME</a>
+            <a href="#">NEW</a>
+            <a href="#">FASHION</a>
+            <a href="#">SHOP</a>
+            <a href="about.html">ABOUT US</a>
+        </div>
+        <button onclick="toggleMenu()" class="menu">
+            ☰
+        </button>
+    </nav>
+    <div class="side-navbar">
+        <button onclick="toggleMenu()" class="close-btn">&times;</button>
+        <nav class="side-navbar-items">
+            <a href="index.html">HOME</a>
+            <a href="#">NEW</a>
+            <a href="#">FASHION</a>
+            <a href="#">SHOP</a>
+            <a href="about.html">ABOUT US</a>
+        </nav>
+    </div>
+    <div class="main-logo">
+        <img src="assets/images/mimco-logo.png" width="150px" alt="">
+    </div>
+    <div class="shop-bar">
+        <div class="shop-img-bar">
+            <img src="assets/images/bp10.jpg" alt="">
+            <img src="assets/images/bp10.jpg" alt="">
+        </div>
+        <div class="shop-botton">
+            <h1>helkskljkksndjknasdfwe</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia obcaecati possimus nobis reiciendis vero fuga non, quis aliquid unde ea eaque iusto ipsa tempore nam exercitationem eum pariatur dolore facilis repudiandae consequatur ratione atque placeat. Temporibus, delectus laborum, harum quidem nemo voluptatem nulla praesentium deleniti quis minima sit velit doloribus.</p>
+            <button>Add Card</button>
+            <button>Add Card</button>
+        </div>
+    </div>
+   
+</html>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+.shop-img-bar img{
+    width: 350px;
+}
+.shop-botton{
+    width: 500px;
+}
+.shop-botton button{
+    width: 300px;
+}
+.shop-bar{
+   
+    width: 100%;
+    height:fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.main-logo{
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+  padding: 10px 25px;
+  box-shadow: rgba(0, 0, 0, 0.087) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 0px 0px 15px 15px;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: 200;
+
+}
+
+
+.navbar-items {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-items a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #d8d7d79e;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-family: "poppins";
+}
+
+.navbar-items a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.menu {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(247, 250, 252, 0.548);
+}
+
+.side-navbar {
+  position: fixed;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  padding-top: 50px;
+  text-align: center;
+  box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: left 0.9s ease-in-out;
+  z-index: 1000;
+  font-family: "poppins";
+  color: #787878b9;
+}
+
+.side-navbar.active {
+  left: 0;
+}
+
+.side-navbar-items a {
+  display: block;
+  font-size: 20px;
+  color: #333;
+  padding: 25px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.side-navbar-items a:hover {
+  color: black;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (max-width:1070px){
+    .shop-botton{
+    width:100%;
+    text-align: center;
+    }
+}
+
+@media screen and (max-width:850px){
+    .navbar-items{
+      display: none;
+    }
+    .menu{
+      display: block;
+    }
+ 
+}
+
+    
+</style>
